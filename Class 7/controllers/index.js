@@ -79,8 +79,6 @@ exports.getTodo = async (req, res) => {
   })
 };
 
-// Till Class 6, Following is from Class 7
-
 exports.putTodo = async (req, res) => {
   const body = req.body;
   const updateData = await Todo.findOneAndUpdate({ title: "Mubashir Todo" }, body, { new: true })
